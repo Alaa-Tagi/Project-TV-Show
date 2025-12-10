@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Episodes — Level 400</title>
+    <title>TV Show Project | Level 500</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
+      <span>Filtering for</span>
+      <input id="showSearch" type="text" />
+      <span id="showCount"></span>
+
       <select id="showSelector"></select>
 
-      <select id="episodeSelector"></select>
+      <button id="backBtn" class="hidden">← All Shows</button>
 
-      <input id="episodeSearch" type="text" placeholder="your search term..." />
-
-      <span id="episodeCount"></span>
+      <select id="episodeSelector" class="hidden"></select>
+      <input id="episodeSearch" class="hidden" placeholder="Search episodes..." />
+      <span id="episodeCount" class="hidden"></span>
     </header>
 
-    <div id="episodesGrid"></div>
+    <div id="showsView"></div>
+    <div id="episodesView" class="hidden"></div>
 
     <script src="script.js"></script>
   </body>
