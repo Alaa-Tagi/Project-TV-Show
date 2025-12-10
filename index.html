@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Episodes — Level 400</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <select id="showSelector"></select>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TV Explorer — Level 999</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="left">
+      <button id="backBtn" class="hidden">← All Shows</button>
+      <input id="showSearch" placeholder="Search shows..." />
+      <select id="sortShows">
+        <option value="alpha">Alphabetical</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
 
-      <select id="episodeSelector"></select>
+    <div class="right">
+      <select id="episodeSelector" class="hidden"></select>
+      <input id="episodeSearch" class="hidden" placeholder="Search episodes..." />
+      <span id="countDisplay" class="hidden"></span>
+    </div>
+  </header>
 
-      <input id="episodeSearch" type="text" placeholder="your search term..." />
+  <main>
+    <section id="showsView"></section>
+    <section id="episodesView" class="hidden"></section>
+    <section id="personView" class="hidden"></section>
+  </main>
 
-      <span id="episodeCount"></span>
-    </header>
-
-    <div id="episodesGrid"></div>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
