@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>TV Episodes — Level 400</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="root">
-    </div>
+    <header>
+      <select id="showSelector"></select>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+      <select id="episodeSelector"></select>
 
-    <!-- Loads YOUR javascript code -->
+      <input id="episodeSearch" type="text" placeholder="your search term..." />
+
+      <span id="episodeCount"></span>
+    </header>
+
+    <div id="episodesGrid"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
