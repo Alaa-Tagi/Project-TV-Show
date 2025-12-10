@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Episodes</title>
+    <title>TV Episodes — Level 400</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <input id="searchInput" type="text" placeholder="Search episodes..." />
-      <span id="countDisplay">Displaying 0 episodes</span>
+      <select id="showSelector"></select>
+
       <select id="episodeSelector"></select>
+
+      <input id="episodeSearch" type="text" placeholder="your search term..." />
+
+      <span id="episodeCount"></span>
     </header>
 
-    <div id="root"></div>
+    <div id="episodesGrid"></div>
 
-    <script src="episodes.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
