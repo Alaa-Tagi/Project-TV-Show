@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Episodes — Level 400</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <select id="showSelector"></select>
-      <select id="episodeSelector"></select>
-      <input id="episodeSearch" type="text" placeholder="Your search term..." />
-      <span id="episodeCount"></span>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TV Shows</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <select id="showSelector">
+        <option value="">Select a show</option>
+    </select>
+    <select id="episodeSelector">
+        <option value="">Select an episode</option>
+    </select>
+    <input id="episodeSearch" type="text" placeholder="Search shows..." />
+    <span id="episodeCount"></span>
+</header>
 
-    <div id="episodesGrid"></div>
+<div id="shows"></div>
+<div id="episodesGrid"></div>
+<div id="episodeDetails"></div>
 
-    <footer>
-      Data provided by <a href="https://www.tvmaze.com/api" target="_blank">TVMaze.com</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
