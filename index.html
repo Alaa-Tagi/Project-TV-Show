@@ -8,19 +8,15 @@
 </head>
 <body>
 <header>
-    <select id="showSelector">
-        <option value="">Select a show</option>
-    </select>
-    <select id="episodeSelector">
-        <option value="">Select an episode</option>
-    </select>
-    <input id="episodeSearch" type="text" placeholder="Search shows..." />
-    <span id="episodeCount"></span>
+    <input id="showSearch" type="text" placeholder="Search shows..." />
+    <span id="showCount"></span>
 </header>
 
 <div id="shows"></div>
-<div id="episodesGrid"></div>
-<div id="episodeDetails"></div>
+
+<footer id="footer">
+  Data provided by <a href="https://www.tvmaze.com/api" target="_blank">TVMaze.com</a>
+</footer>
 
 <script src="script.js"></script>
 </body>

@@ -9,13 +9,13 @@ header {
     background: #333;
     color: #fff;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
 }
-select, input {
+input {
     padding: 0.5rem;
     font-size: 1rem;
+    flex: 1;
 }
 #shows, #episodesGrid {
     display: flex;
@@ -28,15 +28,31 @@ select, input {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    width: 200px;
+    width: 250px;
+    padding: 0.5rem;
     cursor: pointer;
-    transition: transform 0.2s;
-    overflow: hidden;
 }
-.show-card:hover { transform: scale(1.05); }
-.show-card img { width: 100%; display: block; }
-.show-card h3 { margin: 0.5rem; font-size: 1.1rem; }
-.show-card a { display: block; margin: 0.5rem; color: #1a73e8; text-decoration: none; }
+.show-card img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.show-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+.show-card p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+.show-card .genres {
+    font-style: italic;
+    color: #555;
+}
+.show-card .status-runtime {
+    font-size: 0.85rem;
+    color: #333;
+}
 .episode-item {
     cursor: pointer;
     padding: 0.5rem;
@@ -47,7 +63,25 @@ select, input {
 #episodeDetails {
     padding: 1rem;
     max-width: 600px;
-    margin: auto;
+    margin: 1rem auto;
     text-align: center;
 }
-#episodeDetails img { max-width: 100%; margin-top: 1rem; border-radius: 5px; }
+#episodeDetails img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
