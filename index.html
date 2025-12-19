@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TV Shows</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<header>
-    <input id="showSearch" type="text" placeholder="Search shows..." />
-    <span id="showCount"></span>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Shows</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <input
+        id="episodeSearch"
+        type="text"
+        placeholder="Search shows or episodes..."
+      />
 
-<div id="shows"></div>
+      <select id="episodeSelector" style="display: none;"></select>
 
-<footer id="footer">
-  Data provided by <a href="https://www.tvmaze.com/api" target="_blank">TVMaze.com</a>
-</footer>
+      <span id="episodeCount"></span>
+    </header>
 
-<script src="script.js"></script>
-</body>
+    <main id="episodesGrid"></main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
